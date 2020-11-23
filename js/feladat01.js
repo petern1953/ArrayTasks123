@@ -8,5 +8,6 @@ const intArray = [1, 2, 3, 4, 5, 6, 7];
 
 const prodSumItems = intArray.map(item => item * 1.27);
 console.log(prodSumItems);
+
 const prodSumItems2 = intArray.map(item => item * 1.27).reduce((prev, current) => prev + current);
 console.log(prodSumItems2, 'control: 4 * 7 * 1.27 = ', 28 * 1.27);
