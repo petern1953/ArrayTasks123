@@ -16,14 +16,21 @@ const searchItem1 = 'b';
 const searchItem2 = 8;
 const searchItem3 = false;
 
-const answer = (arrToSearch, lookFor) => {
-    return {
-        exists: (arrToSearch.find(item => item === lookFor) === lookFor),
-        index: arrToSearch.findIndex(item => item === lookFor),
-        allElementIsANumber: arrToSearch.every(item => typeof item === "number"),
-        someElementIsANumber: arrToSearch.some(item => typeof item === "number")
-    }
-}
+// const answer = (arrToSearch, lookFor) => {
+//     return {
+//         exists: (arrToSearch.find(item => item === lookFor) === lookFor),
+//         index: arrToSearch.findIndex(item => item === lookFor),
+//         allElementIsANumber: arrToSearch.every(item => typeof item === "number"),
+//         someElementIsANumber: arrToSearch.some(item => typeof item === "number")
+//     }
+// }
+
+const answer = (arrToSearch, lookFor) => ({
+    exists: (arrToSearch.find(item => item === lookFor) === lookFor),
+    index: arrToSearch.findIndex(item => item === lookFor),
+    allElementIsANumber: arrToSearch.every(item => typeof item === "number"),
+    someElementIsANumber: arrToSearch.some(item => typeof item === "number")
+});
 
 console.log(answer(mixedArray, 'a'));
 console.log(answer(mixedArray, 2));
