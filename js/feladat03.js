@@ -15,4 +15,6 @@ const content = ['első', 'második', 'harmadik'];
 
 'use strict';
 
-const htmlCode = stringArray => 
+const htmlCode = array => `<ul>\n${array.map(item => `    <li>${item}</li>\n`).reduce((prev, next) => prev + next)}</ul>`;
+
+console.log(htmlCode(content));
