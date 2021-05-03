@@ -18,3 +18,4 @@ const content = ['első', 'második', 'harmadik'];
 const htmlCode = array => `<ul>\n${array.map(item => `    <li>${item}</li>\n`).reduce((prev, next) => prev + next)}</ul>`;
 
 console.log(htmlCode(content));
+document.body.innerHTML = htmlCode(content) + document.body.innerHTML;
