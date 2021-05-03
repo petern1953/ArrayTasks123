@@ -7,11 +7,12 @@
 //      ha a második paraméterként megadott érték megtalálható a tömbben, akkor a tömbben lévő indexe,
 //      ha nem, akkor -1 legyen az értéke
 // allElementIsANumber: Értéke true / false attól függően, hogy a tömb minden eleme number típusú-e vagy sem
-// someElementIsANumber: Értéke true / false attól függően, hogy a tömbben van-e number típusú elem vagy sem
+// someElementIsANumber: Értéke true / false attól függően, hogy a tömbben van-e number típusú elem vagy nincs
 
 'use strict';
 
 const mixedArray = ['a', true, 2, 'b', 'kuka', false, 8, 2345];
+console.log("mixedArray: ", mixedArray);
 const searchItem1 = 'b';
 const searchItem2 = 8;
 const searchItem3 = false;
